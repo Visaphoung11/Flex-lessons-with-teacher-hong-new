@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    border: 3px solid green;
+    margin: 10px;
+    padding: 5px;
+}
+.header {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.content {
+    display: flex;
+    background-color: yellow;
+    padding: 10px;
+    height: 100vh;
+    gap: 20px;
+}
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(207, 18, 135);
+}
+.sidebar div {
+    background-color: blue;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin: 10px 0; */ /*you can use this shorthand rather than (margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;)*/
+}
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+.main-content div {
+    background-color: blue;
+    width: 50px;
+    height: 500px;
+    margin: 5px;
+}
+.footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

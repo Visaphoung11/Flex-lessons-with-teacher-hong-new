@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid black;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header,footer{
+    background-color: #e20404;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* flex: 1; */
+}
+main{
+    padding: 10px;
+    background-color: green;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* .left{
+    background-color: rgb(169, 226, 13);
+    
+} */
+
+.left,.right{
+    background-color: rgb(169, 226, 13);
+    flex: 1 1 300px;
+    
+}
+
