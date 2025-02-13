@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantheon UI</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <h1 class="text-xl font-bold">PANTHEON</h1>
+        <nav>
+            <ul class="hidden md:flex space-x-6 font-bold text-4xl">
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Our Products</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Team</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden">
+        <ul class="flex flex-col space-y-4 p-4">
+            <li><a href="#" class="text-gray-700 hover:text-blue-600">Our Products</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-600">Team</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+        </ul>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    </div>
+    <section>
+        <div class="mx-auto w-[80%] bg-blue-500">
+            <div class="container mx-auto p-[30px]">
+                <div class="text-start mb-5">
+                    <h1 class="text-start font-bold text-7xl">Lorem ipsum dolor sit amet consectetur</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem adipisci consectetur dolores impedit corporis beatae ratione similique labore aperiam. Debitis cupiditate atque blanditiis magnam numquam deleniti nesciunt perspiciatis. Laborum eos, placeat doloremque vitae earum est quasi? Inventore nam itaque optio.
+                    </p>
+                    <div class="mb-5">
+                        <a href="#" class="href">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cards section-->
+        <!-- <section>
+            <div class="container grid grid-cols-1 bg-black">
+                <div>
+                  <h1>hello</h1>
+                </div>
+                <div>
+                    <h1>hello</h1>
+                  </div>
+                  <div>
+                    <h1>hello</h1>
+                  </div>
+            </div>
+        </section> -->
+    </section>
+    <nav class="flex justify-between items-center mx-auto px-10 py-5 bg-white">
+        <div>logo</div>
+        <div class="Menu">
+            <ul class="flex space-x-4">
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Service</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mt-12 mx-auto w-[80%] grid grid-cols-3 gab-3">
+        <div class="bg-white w-[50%] p-4 rounded-lg">
+            <h1>gdddsssfs</h1>
+            <p>fgffgfgf</p>
+        </div>
+        <div class="bg-white w-[50%] p-4 rounded-lg">
+            <h1>gdddsssfs</h1>
+            <p>fgffgfgf</p>
+        </div>
+        <div class="bg-white w-[50%] p-4 rounded-lg">
+            <h1>gdddsssfs</h1>
+            <p>fgffgfgf</p>
+        </div>
+    </div>
+</body>
+</html>
