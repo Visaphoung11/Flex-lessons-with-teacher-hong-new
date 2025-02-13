@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Demo</title>
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    .container {
+      font-size: 20px; /* Parent */
+      padding: 20px;
+      border: 2px solid black;
+    }
+
+    .rem-box {
+      font-size: 6rem;
+      color: blue;
+    }
+
+    .em-box {
+      font-size: 2em; /* 40px (2 * 20px from parent) */
+      color: red;
+    }
+
+    .vh-box {
+      height: 50vh;
+      background: lightblue;
+    }
+
+    .percent-box {
+      width: 50%;
+      height: 50%;
+      background: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="rem-box">This is 2rem text</p>
+    <p class="em-box">This is 2em text</p>
+  </div>
+
+  <div class="vh-box">
+    This box is 50vh high
+  </div>
+
+  <div class="percent-box">
+    This box is 50% of its parent
+  </div>
+</body>
+</html>
